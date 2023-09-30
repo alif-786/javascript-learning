@@ -11,7 +11,6 @@ let date = new Date();
 let myCreatedDate = new Date(2004, 1, 24, 8, 15);
 console.log(myCreatedDate.toLocaleString())
 
-
 // create a new date and also console it
 
 let myTimeStamp = Date.now();
