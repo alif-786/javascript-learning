@@ -12,7 +12,8 @@ async function getData(url) {
     data.forEach(element => {
         output += `<div>
         <li class="list">${element.name}</li>
-        <a href="${element.href}" class="link">${element.full_name}</a></div>`;
+        <a href="${element.forks_url}"}" class="link">${element.full_name}</a>
+        </div>`;
 
     });
     article.innerHTML = output;
