@@ -11,4 +11,30 @@ if (true) {
 }
 
 // console log all the variables which are declared above 
-console.log(`OUTER : ${a}, ${b}, ${c}`)
+// console.log(`OUTER : ${a}, ${b}, ${c}`)
+
+// nested functions  
+function one() {
+    const username = "Alif kamate"
+
+    function two() {
+        const website = " youtube"
+        console.log(username)
+    }
+    // console.log(website)
+    two();
+}
+
+// one();
+
+// ++++++++++++++++ interesting +++++++++++++++
+
+console.log(addOne(6))
+function addOne(num) {
+    return num + 1;
+}
+
+// addTwo(6) // we can not do like this 
+const addTwo = function (num) { 
+    return num + 2;
+}
